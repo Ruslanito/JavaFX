@@ -6,14 +6,14 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class First_JavaFX2 extends Application {
-	private int windowWidth = 500;
-	private int windowHeight = 500;
+	private int windowWidth = 200;
+	private int windowHeight = 200;
 
 	@Override
 	// метод start() создаёт поток приложения
 	public void start(Stage primaryStage) throws Exception {
 		BorderPane root = new BorderPane();//указываем главного родителя
-		Scene scene1 = new Scene(root, windowWidth, windowHeight);
+		Scene scene1 = new Scene(root, windowWidth, windowHeight); 
 		primaryStage.setScene(scene1);
 		primaryStage.setTitle("Окно простого приложения ");
 		primaryStage.show();
