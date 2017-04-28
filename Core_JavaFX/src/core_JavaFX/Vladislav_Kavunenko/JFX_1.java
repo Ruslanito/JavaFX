@@ -18,7 +18,8 @@ public class JFX_1 extends Application {
 		Pane root = new Pane();
 
 		Scene scene1 = new Scene(root); // создаём сцену
-
+ 
+		primaryStage.setScene(scene1);//выбираем сцену для показа 
 		primaryStage.show();// показываем окно
 	}
 
