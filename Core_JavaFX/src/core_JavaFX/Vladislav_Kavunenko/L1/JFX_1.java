@@ -1,4 +1,7 @@
-package core_JavaFX.Vladislav_Kavunenko;
+package core_JavaFX.Vladislav_Kavunenko.L1;
+
+import java.awt.Button;
+import java.security.acl.Group;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -13,17 +16,22 @@ public class JFX_1 extends Application {
 		primaryStage.setWidth(300);// задаём ширину окна
 		primaryStage.setHeight(300); // задаём высоту окна
 		primaryStage.setResizable(true);// можно изменять размер
-		
-		Pane root = new Pane();
 
-		Scene scene1 = new Scene(root); // создаём сцену
- 
-		primaryStage.setScene(scene1);//выбираем сцену для показа 
+		//Button button1 = new Button("Жми");// создаём кнопку
+		//button1.setLocation(100, 100);
+		//button1.setSize(70, 20);
+
+		Pane root = new Pane();// создаём площадку элементов для сцены
+
+		Scene scene1 = new Scene(root,300,300);
+
+		//root.getChildren().add(button1);
+		primaryStage.setScene(scene1);// выбираем сцену для показа
 		primaryStage.show();// показываем окно
 	}
 
-	public static void main(String[] args) { 
-		launch (args);
+	public static void main(String[] args) {
+		launch(args);
 
 	}
 
