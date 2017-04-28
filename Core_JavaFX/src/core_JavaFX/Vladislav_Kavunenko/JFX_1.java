@@ -13,8 +13,7 @@ public class JFX_1 extends Application {
 		primaryStage.setWidth(300);// задаём ширину окна
 		primaryStage.setHeight(300); // задаём высоту окна
 		primaryStage.setResizable(true);// можно изменять размер
-		primaryStage.setOpacity(50);// прозрачность
-
+		
 		Pane root = new Pane();
 
 		Scene scene1 = new Scene(root); // создаём сцену
@@ -23,7 +22,8 @@ public class JFX_1 extends Application {
 		primaryStage.show();// показываем окно
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
+		launch (args);
 
 	}
 
