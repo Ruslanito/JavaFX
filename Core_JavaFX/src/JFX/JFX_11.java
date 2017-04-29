@@ -1,8 +1,9 @@
-package core_JavaFX.Vladislav_Kavunenko;
+package JFX;
 
-import java.awt.Button;
+
 import javafx.application.Application;
-import javafx.scene.Scene;
+import javafx.scene.*;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class JFX_11 extends Application {
