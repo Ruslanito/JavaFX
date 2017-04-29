@@ -2,6 +2,7 @@ package core_JavaFX.Vladislav_Kavunenko.L1_Button;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -32,6 +33,9 @@ public class JFX2_BorderPane extends Application{
 		root.setTop(hbox);//размещение конопк вверху
 		root.setLeft(vbox);//размещение конопк слева
 		
+		Scene scene1 = new Scene(root, 600, 600);
+		primaryStage.setScene(scene1); 
+		primaryStage.show();		
 		
 	} 
 	 //метод для создания кнопок 
