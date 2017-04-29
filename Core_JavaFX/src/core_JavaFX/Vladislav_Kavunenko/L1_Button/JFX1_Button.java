@@ -8,7 +8,7 @@ import javafx.scene.control.Button;
 
 
 
-public class JFX_1 extends Application {
+public class JFX1_Button extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
