@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class JFX3_Label extends Application {
@@ -35,14 +36,28 @@ public class JFX3_Label extends Application {
 		labelImg.setGraphicTextGap(10); // растояние между элементами
 		labelImg.setContentDisplay(ContentDisplay.TOP); // картинка будет вверху
 														// а текст внизу
-		// 4.создаём метку реагирующую на наведение курсора
-		Label magicLabel = new Label(); 
-		magicLabel.setText("Волшебная метка - наведи");  
-		magicLabel.setTranslateX(150); 
-		magicLabel.setTranslateY(200); 
+		// 4.создаём метку, реагирующую на наведение курсора
+		Label magicLabel = new Label();
+		magicLabel.setText("Волшебная метка - наведи");
+		magicLabel.setTranslateX(150);
+		magicLabel.setTranslateY(200);
+		// добавляем обработчик событий (при наведени курсора текст
+		// увеличивается и меняет цвет)
+		magicLabel.setOnMouseEntered(event -> {
+			magicLabel.setScaleX(2);
+			magicLabel.setScaleY(2);
+			magicLabel.setTextFill(Color.RED);
+		});  
+		magicLabel.setOnMouseExited(event -> {
+			magicLabel.setScaleX(1);
+			magicLabel.setScaleY(1);
+			magicLabel.setTextFill(Color.BLUE);
+		});
 		
 
-		root.getChildren().addAll(label1, labelImg, magicLabel); // добавляем метки в root
+		root.getChildren().addAll(label1, labelImg, magicLabel); // добавляем
+																	// метки в
+																	// root
 		Scene scene1 = new Scene(root, 600, 500);
 		primaryStage.setScene(scene1);
 		primaryStage.show();
