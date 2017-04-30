@@ -39,8 +39,8 @@ public class JFX3_Label extends Application {
 		// 4.создаём метку, реагирующую на наведение курсора
 		Label magicLabel = new Label();
 		magicLabel.setText("Волшебная метка - наведи");
-		magicLabel.setTranslateX(150);
-		magicLabel.setTranslateY(200);
+		magicLabel.setTranslateX(200);
+		magicLabel.setTranslateY(400);
 		// добавляем обработчик событий (при наведени курсора текст
 		// увеличивается и меняет цвет)
 		magicLabel.setOnMouseEntered(event -> {
