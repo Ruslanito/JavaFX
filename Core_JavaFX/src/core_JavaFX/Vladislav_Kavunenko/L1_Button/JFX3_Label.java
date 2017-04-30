@@ -24,19 +24,25 @@ public class JFX3_Label extends Application {
 		// 2.создаём метку с картинкой
 		Image image1 = new Image(getClass().getResourceAsStream("200_4.jpg"));
 		ImageView img1 = new ImageView(image1);
-		img1.setFitHeight(300);//размер картинки в метке
-		img1.setFitWidth(400);//размер картинки в метке
+		img1.setFitHeight(300);// размер картинки в метке
+		img1.setFitWidth(400);// размер картинки в метке
 		Label labelImg = new Label();
 		labelImg.setGraphic(img1);// вставляем картинку в метку
 		labelImg.setTranslateX(100);
 		labelImg.setTranslateY(50);
-		// 3.создаём метку с картинкой и текстом 
-		labelImg.setText("200"); //надпись в метке    
-		labelImg.setGraphicTextGap(10); //растояние между элементами
-		labelImg.setContentDisplay(ContentDisplay.TOP); //картинка будет вверху а текст внизу
+		// 3.создаём метку с картинкой и текстом
+		labelImg.setText("200"); // надпись в метке
+		labelImg.setGraphicTextGap(10); // растояние между элементами
+		labelImg.setContentDisplay(ContentDisplay.TOP); // картинка будет вверху
+														// а текст внизу
+		// 4.создаём метку реагирующую на наведение курсора
+		Label magicLabel = new Label(); 
+		magicLabel.setText("Волшебная метка - наведи");  
+		magicLabel.setTranslateX(150); 
+		magicLabel.setTranslateY(200); 
 		
 
-		root.getChildren().addAll(label1, labelImg); // добавляем метки в root
+		root.getChildren().addAll(label1, labelImg, magicLabel); // добавляем метки в root
 		Scene scene1 = new Scene(root, 600, 500);
 		primaryStage.setScene(scene1);
 		primaryStage.show();
