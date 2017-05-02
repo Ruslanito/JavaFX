@@ -8,7 +8,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-public class JFX5_RadioButton extends Application {
+public class JFX5_RadioButton2 extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
