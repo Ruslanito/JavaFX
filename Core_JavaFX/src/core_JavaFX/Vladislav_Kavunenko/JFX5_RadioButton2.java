@@ -14,6 +14,10 @@ public class JFX5_RadioButton2 extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
+	
+	/*
+	 имеем три кнопки, объединённые в группу с возможностью выбора только одной кнопки
+	 */
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
