@@ -1,4 +1,4 @@
-package core_JavaFX.Vladislav_Kavunenko.YT;
+package core_JavaFX.Vladislav_Kavunenko;
 
 import javafx.application.Application;
 import javafx.scene.Group;
