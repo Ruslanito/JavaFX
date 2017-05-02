@@ -13,7 +13,9 @@ public class JFX5_RadioButton1 extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-
+/*
+ имеем три кнопки существующие сами по себе, выбрать можно любую
+ */
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		RadioButton rb1 = new RadioButton("1");
