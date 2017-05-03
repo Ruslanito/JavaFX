@@ -42,11 +42,6 @@ public class JFX5_RadioButton3 extends Application {
 		rb3.setToggleGroup(group);//добавляем кнопки в группу
 		rb2.setSelected(true);//указываем кнопку по-умолчанию
 		
-		rb1.setUserData("1");
-		rb2.setUserData("2");
-		rb3.setUserData("3");
-		
-		
 		
 		buttons.getChildren().addAll(rb1,rb2,rb3);
 		root.setTop(buttons);
