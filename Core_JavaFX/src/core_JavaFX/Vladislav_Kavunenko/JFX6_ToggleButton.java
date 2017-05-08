@@ -53,7 +53,7 @@ public class JFX6_ToggleButton extends Application {
 			}
 		});
 
-		tb1.setStyle("-fx-base:lightgreen");
+		tb1.setStyle("-fx-base:lightgreen");//цвет фона кнопки
 		tb2.setStyle("-fx-base:lightblue");
 		tb3.setStyle("-fx-base:salmon");
 
