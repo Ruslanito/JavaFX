@@ -26,7 +26,7 @@ public class JFX6_ToggleButton extends Application {
 
 		ToggleGroup group = new ToggleGroup();
 
-		ToggleButton tb1 = new ToggleButton("1");
+		ToggleButton tb1 = new ToggleButton("1");//надписи кнопок
 		ToggleButton tb2 = new ToggleButton("2");
 		ToggleButton tb3 = new ToggleButton("3");
 
