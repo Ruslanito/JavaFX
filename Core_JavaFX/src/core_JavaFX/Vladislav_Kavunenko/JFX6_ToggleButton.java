@@ -33,27 +33,31 @@ public class JFX6_ToggleButton extends Application {
 		tb1.setToggleGroup(group);
 		tb2.setToggleGroup(group);
 		tb3.setToggleGroup(group);
-		
+
 		tb1.setUserData(Color.LIGHTGREEN);
 		tb2.setUserData(Color.LIGHTBLUE);
 		tb3.setUserData(Color.SALMON);
-		
+
 		Rectangle rect = new Rectangle(300, 300);
 		rect.setFill(Color.WHITE);
 		rect.setStroke(Color.DARKGOLDENROD);
 		rect.setStrokeWidth(2);
 		rect.setArcHeight(50);
 		rect.setArcWidth(50);
-		
-		group.selectedToggleProperty().addListener(event ->{
-			if(group.getSelectedToggle() !=null){
-				rect.setFill((Color)group.getSelectedToggle().getUserData());
-			}
-			else {
+
+		group.selectedToggleProperty().addListener(event -> {
+			if (group.getSelectedToggle() != null) {
+				rect.setFill((Color) group.getSelectedToggle().getUserData());
+			} else {
 				rect.setFill(Color.WHITE);
 			}
-		
 		});
+
+		tb1.setStyle("-fx-base:lightgreen");
+		tb2.setStyle("-fx-base:lightblue");
+		tb3.setStyle("-fx-base:salmon");
+
+		tb2.setSelected(true);
 
 		buttons.getChildren().addAll(tb1, tb2, tb3);
 		root.setTop(buttons);
