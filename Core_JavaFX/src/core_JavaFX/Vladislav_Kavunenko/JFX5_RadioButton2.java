@@ -24,7 +24,7 @@ public class JFX5_RadioButton2 extends Application {
 		RadioButton rb1 = new RadioButton("1");
 		RadioButton rb2 = new RadioButton("2");
 		RadioButton rb3 = new RadioButton("3");
- 
+		 
 		ToggleGroup group = new ToggleGroup();//создаём группу для радио-кнопок
 		rb1.setToggleGroup(group);//добавляем кнопки в группу
 		rb2.setToggleGroup(group);//добавляем кнопки в группу
