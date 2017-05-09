@@ -9,7 +9,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
+//import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 public class JFX7_CheckBox extends Application {
@@ -34,10 +34,25 @@ public class JFX7_CheckBox extends Application {
 
 		// создаём массив треугольников
 		Rectangle[] rectangles = new Rectangle[] {
-				new Rectangle(100, 100, Color.RED),
-				new Rectangle(100, 100, Color.GREEN),
-				new Rectangle(100, 100, Color.BLUE), 
+				new Rectangle(100, 100),
+				new Rectangle(100, 100),
+				new Rectangle(100, 100), 
 		};
+		
+		for (int i = 0; i <3; i++){
+			CheckBox cb = cbs[i];
+			Rectangle rect = rectangles[i];
+			btns.getChildren().add(cb);
+			cb.selectedProperty().addListener(event->{
+				if(cb.isSelected()){
+					rects.getChildren().add(rect);
+				}
+				else{
+					rects.getChildren().remove(rect);
+				}
+			});
+		}
+		
 
 		root.setCenter(rects);
 		root.setLeft(btns);
