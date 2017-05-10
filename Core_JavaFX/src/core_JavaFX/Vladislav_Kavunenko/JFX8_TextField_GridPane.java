@@ -25,9 +25,9 @@ public class JFX8_TextField_GridPane extends Application {
 		GridPane.setConstraints(name, 0, 0);
 		root.getChildren().add(name);
 		
-		TextField lastname = new TextField("Фамилия");
-		GridPane.setConstraints(lastname, 0, 1);
-		root.getChildren().add(lastname);
+		TextField lastName = new TextField("Фамилия");
+		GridPane.setConstraints(lastName, 0, 1);
+		root.getChildren().add(lastName);
 		
 		TextField comment = new TextField();
 		comment.setPromptText("Введи комментарий");
