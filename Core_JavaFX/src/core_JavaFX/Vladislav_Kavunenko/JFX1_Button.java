@@ -1,4 +1,4 @@
-package core_JavaFX.Vladislav_Kavunenko;
+package Core_JavaFX.src.core_JavaFX.Vladislav_Kavunenko;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

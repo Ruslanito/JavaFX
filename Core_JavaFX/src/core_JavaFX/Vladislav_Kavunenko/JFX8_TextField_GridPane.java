@@ -1,9 +1,10 @@
-package core_JavaFX.Vladislav_Kavunenko;
+package Core_JavaFX.src.core_JavaFX.Vladislav_Kavunenko;
 
-import java.awt.TextField;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 

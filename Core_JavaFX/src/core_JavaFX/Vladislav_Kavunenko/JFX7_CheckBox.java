@@ -1,6 +1,4 @@
-package core_JavaFX.Vladislav_Kavunenko;
-
-import java.awt.Rectangle;
+package Core_JavaFX.src.core_JavaFX.Vladislav_Kavunenko;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
