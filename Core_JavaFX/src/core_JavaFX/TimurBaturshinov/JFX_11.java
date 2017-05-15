@@ -1,4 +1,4 @@
-package core_JavaFX.TimurBaturshinov;
+package Core_JavaFX.src.core_JavaFX.TimurBaturshinov;
 
 
 import javafx.application.Application;
